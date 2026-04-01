@@ -1,20 +1,9 @@
 export default function AmenitiesPage() {
   const amenities = [
-    {
-      title: 'Infinity Pool',
-      desc: 'Relax in our rooftop infinity pool with a stunning city skyline view.',
-    },
-    {
-      title: 'Spa & Wellness',
-      desc: 'Rejuvenate with luxury spa therapies, steam, and wellness treatments.',
-    },
+    
     {
       title: 'Fine Dining',
       desc: 'Enjoy curated gourmet meals, rooftop dining, and 24/7 room service.',
-    },
-    {
-      title: 'Airport Pickup',
-      desc: 'Comfortable airport transfers with premium chauffeur service.',
     },
     {
       title: 'High-Speed WiFi',

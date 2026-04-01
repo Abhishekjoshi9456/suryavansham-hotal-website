@@ -1,8 +1,5 @@
 const amenities = [
   'Free High-Speed WiFi',
-  'Infinity Pool',
-  'Spa & Wellness',
-  'Airport Pickup',
   'Complimentary Breakfast',
   'Private Parking',
 ];
