@@ -3,7 +3,7 @@ export const rooms = [
     id: 1,
     name: 'Deluxe Room',
     price: '₹4,999/night',
-    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
+    image: '/rooms/deluxe-room.jpeg',
   },
   {
     id: 2,
