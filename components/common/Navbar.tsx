@@ -1,18 +1,19 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import BookNowButton from "@/components/common/NavbarBookingButton";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: 'Home', href: '/' },
-    { name: 'Rooms', href: '/rooms' },
-    { name: 'Amenities', href: '/amenities' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Home", href: "/" },
+    { name: "Rooms", href: "/rooms" },
+    { name: "Amenities", href: "/amenities" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -30,7 +31,7 @@ export function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium transition-colors hover:text-amber-300"
+                className="text-lg font-medium transition-colors hover:text-amber-300"
               >
                 {link.name}
               </Link>
@@ -38,9 +39,7 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
-            <button className="hidden rounded-2xl bg-amber-400 px-5 py-2 font-semibold text-black md:block">
-              Book Now
-            </button>
+              <BookNowButton />
 
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -64,9 +63,9 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <button className="mt-2 w-full rounded-2xl bg-amber-400 px-5 py-3 font-semibold text-black">
-              Book Now
-            </button>
+            <div className="mt-8">
+              <BookNowButton />
+            </div>
           </div>
         )}
       </nav>

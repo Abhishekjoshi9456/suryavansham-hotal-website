@@ -1,3 +1,5 @@
+import BookNowButton from '@/components/common/BookNowButton';
+
 export function Hero() {
   return (
     <section
@@ -12,13 +14,18 @@ export function Hero() {
         <p className="mb-4 text-xs uppercase tracking-[0.35em] text-amber-300 sm:text-sm">
           Luxury Stay Experience
         </p>
-        <h1 className="max-w-4xl text-3xl font-bold leading-tight sm:text-5xl lg:text-7xl">
+        <h1 className="max-w-4xl text-3xl font-bold leading-tight sm:text-5xl lg:text-5xl">
           Welcome to Suryavansham Hotel
         </h1>
         <p className="mt-6 max-w-2xl text-sm text-neutral-200 sm:text-base lg:text-lg">
-          Premium rooms, rooftop dining, spa relaxation, and unforgettable hospitality.
+          Premium rooms, Free High-Speed WiFi, Complimentary Breakfast, Private Parking.
         </p>
+
+        {/* Book Now Button */}
+          <div className="mt-8">
+            <BookNowButton />
+          </div>
       </div>
     </section>
   );
-} 
+}

@@ -16,7 +16,7 @@ export function Footer() {
           </div>
 
           <p className="mt-4 text-sm leading-6 text-neutral-400">
-            Experience luxury stays with premium rooms, rooftop dining, spa, and world-class hospitality.
+            Experience luxury stays with Premium rooms, Free High-Speed WiFi, Complimentary Breakfast, Private Parking.
           </p>
 
           {/* Social Icons */}
