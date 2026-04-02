@@ -1,8 +1,11 @@
 export function Hero() {
   return (
     <section
-      className="relative min-h-[70vh] sm:min-h-[80vh] lg:h-[90vh] bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/hero.jpeg')" }}
+      className="relative min-h-[70vh] sm:min-h-[80vh] lg:h-[90vh] bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: "url('/hero.jpeg')",
+        backgroundPosition: "center center",
+      }}
     >
       <div className="absolute inset-0 bg-black/55" />
       <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 py-20 text-center sm:px-6 lg:px-8">
