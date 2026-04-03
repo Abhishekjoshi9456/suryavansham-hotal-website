@@ -12,11 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Luxury Hotel in Uttarakhand",
   description: "Book premium rooms with best amenities.",
+  verification: {
+    google: "552MR2mOUQgB5VfWrIP2wUOdhl1L9bLX8wdn2X4k2lM",
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
