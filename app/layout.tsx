@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Suryavansham | Luxury Hotel in Uttarakhand",
+  title: "Suryavansham | Luxury Hotel in Kedarnath Uttarakhand",
   description:
     "Experience premium mountain stay with luxury rooms, free WiFi, breakfast and scenic views in Guptkashi, Uttarakhand.",
   verification: {
