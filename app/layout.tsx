@@ -13,12 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luxury Hotel in Uttarakhand",
-  description: "Book premium rooms with best amenities.",
+  title: "Suryavansham | Luxury Hotel in Uttarakhand",
+  description:
+    "Experience premium mountain stay with luxury rooms, free WiFi, breakfast and scenic views in Guptkashi, Uttarakhand.",
   verification: {
     google: "552MR2mOUQgB5VfWrIP2wUOdhl1L9bLX8wdn2X4k2lM",
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
