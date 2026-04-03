@@ -2,7 +2,8 @@ import { Navbar } from '@/components/common/Navbar';
 import { Footer } from '@/components/common/Footer';
 import { Hero } from '@/components/home/Hero';
 import { FeaturedRooms } from '@/components/home/FeaturedRooms';
-import { Amenities } from '@/components/home/Amenities';
+// import { Amenities } from '@/components/home/Amenities';
+import { WhyChooseUs } from '@/components/home/WhyChooseUs';
 
 export default function HomePage() {
   return (
@@ -10,7 +11,8 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <FeaturedRooms />
-      <Amenities />
+      {/* <Amenities /> */}
+      <WhyChooseUs/>
       <Footer />
     </main>
   );

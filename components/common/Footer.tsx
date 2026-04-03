@@ -1,11 +1,16 @@
-import Link from 'next/link';
-import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
+import SocialIcons from "./SocialIcons";
 
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-black py-10 text-white sm:py-14">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
-
         {/* Logo + About */}
         <div>
           <div className="flex items-center gap-3">
@@ -16,41 +21,30 @@ export function Footer() {
           </div>
 
           <p className="mt-4 text-sm leading-6 text-neutral-400">
-            Experience luxury stays with Premium rooms, Free High-Speed WiFi, Complimentary Breakfast, Private Parking.
+            Experience luxury stays with Premium rooms, Free High-Speed WiFi,
+            Complimentary Breakfast, Private Parking.
           </p>
 
           {/* Social Icons */}
-          <div className="mt-4 flex items-center gap-4">
-            <a href="https://facebook.com" target="_blank" className="text-neutral-400 hover:text-amber-300 hover:scale-110 transition">
-              <FaFacebookF size={18} />
-            </a>
-
-            <a href="https://instagram.com" target="_blank" className="text-neutral-400 hover:text-amber-300 hover:scale-110 transition">
-              <FaInstagram size={18} />
-            </a>
-
-            <a href="https://twitter.com" target="_blank" className="text-neutral-400 hover:text-amber-300 hover:scale-110 transition">
-              <FaTwitter size={18} />
-            </a>
-
-            <a
-              href="https://wa.me/918279922058"
-              target="_blank"
-              className="text-neutral-400 hover:text-green-500 hover:scale-110 transition"
-            >
-              <FaWhatsapp size={18} />
-            </a>
-          </div>
+          <SocialIcons />
         </div>
 
         {/* Quick Links */}
         <div>
           <h4 className="mb-4 text-lg font-semibold">Quick Links</h4>
           <ul className="space-y-2 text-sm text-neutral-400">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/rooms">Rooms</Link></li>
-            <li><Link href="/gallery">Gallery</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/rooms">Rooms</Link>
+            </li>
+            <li>
+              <Link href="/gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
 
@@ -100,16 +94,18 @@ export function Footer() {
             ⭐ 4.8 Rating on Google
           </p>
         </div>
-
       </div>
 
       {/* Bottom Section */}
       <div className="mt-10 border-t border-white/10 pt-6 px-4 text-center text-xs text-neutral-500 sm:text-sm">
         © 2026 Suryavansham Hotel. All rights reserved.
-
         <div className="mt-3 flex justify-center gap-6">
-          <a href="#" className="hover:text-amber-300">Privacy Policy</a>
-          <a href="#" className="hover:text-amber-300">Terms & Conditions</a>
+          <a href="#" className="hover:text-amber-300">
+            Privacy Policy
+          </a>
+          <a href="#" className="hover:text-amber-300">
+            Terms & Conditions
+          </a>
         </div>
       </div>
     </footer>
