@@ -1,11 +1,14 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://suryavansham.in";
 
   return [
     {
-      url: `${baseUrl}`,
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
