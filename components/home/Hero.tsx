@@ -12,7 +12,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-black/55" />
       <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 py-20 text-center sm:px-6 lg:px-8">
         <p className="mb-4 text-xs uppercase tracking-[0.35em] text-amber-300 sm:text-sm">
-          Luxury Stay Experience
+          Luxury Stay Experience at Kedarnath route
         </p>
         <h1 className="max-w-4xl text-3xl font-bold leading-tight sm:text-5xl lg:text-5xl">
           Welcome to Suryavansham Hotel
