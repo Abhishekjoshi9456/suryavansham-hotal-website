@@ -145,21 +145,32 @@ export default function BookingModal({
             className="w-full rounded-2xl border border-white/20 bg-black/30 px-4 py-3 outline-none"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input
-              type="date"
-              name="check_in"
-              value={formData.check_in}
-              onChange={handleChange}
-              className="w-full rounded-2xl border border-white/20 bg-black/30 px-4 py-3 outline-none"
-            />
-            <input
-              type="date"
-              name="check_out"
-              value={formData.check_out}
-              onChange={handleChange}
-              className="w-full rounded-2xl border border-white/20 bg-black/30 px-4 py-3 outline-none"
-            />
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="mb-2 block text-sm font-medium text-zinc-300">
+                Check In
+              </label>
+              <input
+                type="date"
+                name="check_in"
+                value={formData.check_in}
+                onChange={handleChange}
+                className="w-full rounded-2xl border border-white/20 bg-black/30 px-4 py-3 text-white outline-none"
+              />
+            </div>
+
+            <div>
+              <label className="mb-2 block text-sm font-medium text-zinc-300">
+                Check Out
+              </label>
+              <input
+                type="date"
+                name="check_out"
+                value={formData.check_out}
+                onChange={handleChange}
+                className="w-full rounded-2xl border border-white/20 bg-black/30 px-4 py-3 text-white outline-none"
+              />
+            </div>
           </div>
 
           <textarea
