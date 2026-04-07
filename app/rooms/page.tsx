@@ -1,5 +1,6 @@
-import Image from 'next/image';
-import { rooms } from '@/data/rooms';
+import Image from "next/image";
+import { rooms } from "@/data/rooms";
+import Link from "next/link";
 
 export default function RoomsPage() {
   return (
@@ -32,9 +33,11 @@ export default function RoomsPage() {
             <div className="p-6">
               <h2 className="text-2xl font-semibold">{room.name}</h2>
               <p className="mt-2 text-amber-300">{room.price}</p>
-              <button className="mt-5 rounded-2xl bg-amber-400 px-5 py-2 font-semibold text-black">
-                Book This Room
-              </button>
+              <Link href={`/rooms/${room.id}`}>
+                <button className="mt-5 rounded-2xl bg-amber-400 px-5 py-2 font-semibold text-black">
+                  View Room
+                </button>
+              </Link>
             </div>
           </div>
         ))}

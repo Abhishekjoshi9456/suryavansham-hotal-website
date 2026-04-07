@@ -1,12 +1,13 @@
-'use client';
+"use client";
 
-import { rooms } from '@/data/rooms';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import Link from "next/link";
+import { rooms } from "@/data/rooms";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export function FeaturedRooms() {
   return (
@@ -18,10 +19,8 @@ export function FeaturedRooms() {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={24}
-        // navigation
-        // pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
-        loop
+        loop={rooms.length > 2}
         breakpoints={{
           0: { slidesPerView: 1 },
           640: { slidesPerView: 2 },
@@ -30,19 +29,21 @@ export function FeaturedRooms() {
       >
         {rooms.map((room) => (
           <SwiperSlide key={room.id}>
-            <div className="overflow-hidden rounded-3xl bg-white/5 shadow-2xl">
-              <img
-                src={room.image}
-                alt={room.name}
-                className="h-56 w-full object-cover sm:h-64 lg:h-72"
-              />
-              <div className="p-5 sm:p-6">
-                <h3 className="text-xl font-semibold sm:text-2xl">
-                  {room.name}
-                </h3>
-                <p className="mt-2 text-amber-300">{room.price}</p>
+            <Link href={`/rooms/${room.id}`}>
+              <div className="cursor-pointer overflow-hidden rounded-3xl bg-white/5 shadow-2xl transition hover:scale-105">
+                <img
+                  src={room.image}
+                  alt={room.name ?? "Room image"}
+                  className="h-56 w-full object-cover sm:h-64 lg:h-72"
+                />
+                <div className="p-5 sm:p-6">
+                  <h3 className="text-xl font-semibold sm:text-2xl">
+                    {room.name}
+                  </h3>
+                  <p className="mt-2 text-amber-300">{room.price}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
