@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    cpus: 1,
+  },
 };
 
 export default nextConfig;
