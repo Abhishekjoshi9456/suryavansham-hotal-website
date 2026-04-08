@@ -20,11 +20,13 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
       <nav className="mx-auto max-w-7xl px-6 py-4 text-white">
         <div className="flex items-center justify-between">
-          <img
-            src="/logo-new.png"
-            alt="Suryavansham Logo"
-            className="h-14 md:h-16 w-auto object-contain drop-shadow-lg"
-          />
+          <Link href="/" aria-label="Go to homepage">
+            <img
+              src="/logo-new.png"
+              alt="Suryavansham Logo"
+              className="h-14 w-auto object-contain drop-shadow-lg md:h-16"
+            />
+          </Link>
 
           <div className="hidden items-center gap-8 md:flex">
             {links.map((link) => (
@@ -39,7 +41,7 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
-              <BookNowButton />
+            <BookNowButton />
 
             <button
               onClick={() => setIsOpen(!isOpen)}

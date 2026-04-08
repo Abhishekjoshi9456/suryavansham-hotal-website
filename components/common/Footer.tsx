@@ -14,10 +14,12 @@ export function Footer() {
         {/* Logo + About */}
         <div>
           <div className="flex items-center gap-3">
-            <img src="/logo.png" className="h-12 w-auto" />
-            <span className="text-xl font-bold text-amber-300">
-              Suryavansham
-            </span>
+            <Link href="/" aria-label="Go to homepage">
+              <img src="/logo.png" className="h-12 w-auto" />
+              <span className="text-xl font-bold text-amber-300">
+                Suryavansham
+              </span>
+            </Link>
           </div>
 
           <p className="mt-4 text-sm leading-6 text-neutral-400">
