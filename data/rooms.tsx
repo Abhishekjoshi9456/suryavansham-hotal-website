@@ -1,7 +1,7 @@
 export const rooms = [
   {
-    id: 'deluxe-room',
-    name: 'Deluxe Room',
+    id: 'standard-room',
+    name: 'Standard Room',
     price: '₹4,999/night',
     image: '/rooms/deluxe-room.jpeg',
 
@@ -12,7 +12,7 @@ export const rooms = [
     ],
 
     meta_description:
-      'A comfortable deluxe room with modern interiors, king-size bed, AC, and free WiFi.',
+      'A comfortable Standard Room with modern interiors, king-size bed, AC, and free WiFi.',
 
     amenities: ['25 Sq. meter', 'Free WiFi', 'Balcony'],
 
@@ -42,8 +42,8 @@ export const rooms = [
   },
 
   {
-    id: 'super-deluxe',
-    name: 'Super Deluxe Room',
+    id: 'deluxe-room',
+    name: 'Deluxe Room',
     price: '₹5,999/night',
     image:
       'https://images.unsplash.com/photo-1505692952047-1a78307da8f2?q=80&w=1200&auto=format&fit=crop',
@@ -55,7 +55,7 @@ export const rooms = [
     ],
 
     meta_description:
-      'Spacious super deluxe room with luxury interiors, balcony view, and premium facilities.',
+      'Spacious deluxe room with luxury interiors, balcony view, and premium facilities.',
 
     amenities: [
       'AC',

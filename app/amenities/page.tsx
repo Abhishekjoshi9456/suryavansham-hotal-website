@@ -3,7 +3,7 @@ export default function AmenitiesPage() {
     
     {
       title: 'Fine Dining',
-      desc: 'Enjoy curated gourmet meals, rooftop dining, and 24/7 room service.',
+      desc: 'Enjoy curated gourmet meals, and 24/7 room service.',
     },
     {
       title: 'High-Speed WiFi',
