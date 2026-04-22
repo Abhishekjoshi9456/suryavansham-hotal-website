@@ -11,7 +11,7 @@ type Room = {
   meta_description: string;
   amenities: string[];
   description: React.ReactNode;
-  image?: string; // optional (agar use ho raha hai)
+  image: string; // optional (agar use ho raha hai)
 };
 
 export const rooms: Room[] = [
