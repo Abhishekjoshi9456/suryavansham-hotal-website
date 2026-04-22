@@ -3,7 +3,7 @@ export const rooms = [
     id: "standard-room",
     name: "Standard Room",
     price: "₹4,999/night",
-    image: "/rooms/deluxe-room.jpeg",
+    image: "/rooms/standard-room1.jpeg",
 
     // images: [
     //   '/rooms/deluxe-room.jpeg',
@@ -12,9 +12,10 @@ export const rooms = [
     // ],
 
     media: [
-      { type: "image", src: "/rooms/deluxe-room.jpeg" },
+      { type: "image", src: "/rooms/standard-room1.jpeg" },
       // { type: "video", src: "/rooms/room-video.mp4" },
-      { type: "image", src: "/rooms/deluxe-room2.jpeg" },
+      { type: "image", src: "/rooms/standard-room2.jpeg" },
+      { type: "image", src: "/rooms/standard-room3.jpeg" },
     ],
 
     meta_description:
