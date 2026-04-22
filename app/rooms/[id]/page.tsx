@@ -2,6 +2,7 @@ import { rooms } from "@/data/rooms";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import RoomGallery from "./RoomGallery";
+import BookNowButton from "@/components/common/BookNowButton";
 
 export async function generateMetadata({
   params,
@@ -82,10 +83,9 @@ export default async function RoomDetailsPage({
               {room.price}
             </p>
 
-            <button className="mt-6 w-full rounded-2xl bg-amber-400 px-6 py-4 font-semibold text-black transition hover:scale-[1.02]">
-              Reserve Now
-            </button>
-
+            <div className="mt-4 w-full">
+              <BookNowButton full />
+            </div>
             <button className="mt-4 w-full rounded-2xl border border-white/20 px-6 py-4 font-semibold transition hover:bg-white/10">
               Check Availability
             </button>
