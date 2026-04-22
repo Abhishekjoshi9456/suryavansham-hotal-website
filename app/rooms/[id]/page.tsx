@@ -51,7 +51,7 @@ export default async function RoomDetailsPage({
           </p> */}
         </div>
 
-        <RoomGallery images={room.images} roomName={room.name} />
+        <RoomGallery media={room.media} roomName={room.name} />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2">

@@ -1,4 +1,4 @@
-import { galleryImages } from '@/data/gallery';
+import { galleryImages } from "@/data/gallery";
 
 export default function GalleryPage() {
   return (
@@ -7,25 +7,38 @@ export default function GalleryPage() {
         <p className="text-xs uppercase tracking-[0.35em] text-amber-300 sm:text-sm">
           Moments & Luxury
         </p>
-        <h1 className="mt-3 text-3xl font-bold sm:text-5xl">Our Hotel Gallery</h1>
+        <h1 className="mt-3 text-3xl font-bold sm:text-5xl">
+          Our Hotel Gallery
+        </h1>
         <p className="mx-auto mt-4 max-w-2xl text-sm text-neutral-400 sm:text-base">
-          Explore our premium rooms, stunning interiors, rooftop pool, and unforgettable experiences.
+          Explore our premium rooms, stunning interiors, rooftop pool, and
+          unforgettable experiences.
         </p>
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-        {galleryImages.map((image) => (
+        {galleryImages.map((item) => (
           <div
-            key={image.id}
+            key={item.id}
             className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5"
           >
-            <img
-              src={image.src}
-              alt={image.title}
-              className="h-72 w-full object-cover transition duration-500 group-hover:scale-105"
-            />
+            {item.type === "video" ? (
+              <video
+                src={item.src}
+                controls
+                poster="/rooms/gallery/image5.jpeg"
+                className="h-72 w-full object-cover"
+              />
+            ) : (
+              <img
+                src={item.src}
+                alt={item.title}
+                className="h-72 w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            )}
+
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-white">{image.title}</h3>
+              <h3 className="text-lg font-semibold text-white">{item.title}</h3>
             </div>
           </div>
         ))}

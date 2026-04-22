@@ -84,19 +84,20 @@ export default function BookingModal({
 
   // Portal target
   const modalContent = (
-    <div className="fixed inset-0 z-[9999] bg-black/70" onClick={onClose}>
+    <div className="fixed inset-0 z-[9999] bg-black/70 overflow-y-auto">
       <div className="flex min-h-screen items-center justify-center px-4">
         <div
           className="relative mx-auto w-[calc(100vw-2rem)] max-w-md sm:max-w-lg overflow-hidden rounded-[28px] border border-white/10 bg-gradient-to-b from-black/95 to-black/90 p-5 sm:p-7"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Close Button */}
-          <button
-            onClick={onClose}
-            className="absolute right-6 top-6 text-3xl font-bold hover:text-amber-400 transition-colors"
-          >
-            &times;
-          </button>
+
+            <button
+              onClick={onClose}
+              className="absolute right-2 top-2 text-3xl text-amber-400 hover:text-amber-400"
+            >
+              &times;
+            </button>
 
           <h2 className="mb-5 text-center text-2xl sm:text-3xl font-bold tracking-wide text-amber-300">
             Reserve Your Stay

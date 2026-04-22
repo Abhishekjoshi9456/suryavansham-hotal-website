@@ -1,32 +1,56 @@
 export const galleryImages = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
+    src: '/rooms/deluxe-room1.jpeg',
     title: 'Luxury Deluxe Room',
+    type: "image",
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop',
+    src: '/rooms/deluxe-room2.jpeg',
     title: 'Hotel Exterior Night View',
+    type: "image",
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=1200&auto=format&fit=crop',
+    src: '/rooms/gallery/image1.jpeg',
     title: 'Family Suite',
+    type: "image",
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop',
+    src: '/rooms/gallery/image2.jpeg',
     title: 'Infinity Pool',
+    type: "image",
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1200&auto=format&fit=crop',
+    src: '/rooms/gallery/image3.jpeg',
     title: 'Luxury Lobby',
+    type: "image",
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?q=80&w=1200&auto=format&fit=crop',
+    src: '/rooms/gallery/image4.jpeg',
     title: 'Fine Dining Area',
+    type: "image",
+  },
+   {
+    id: 7,
+    src: '/rooms/gallery/image5.jpeg',
+    title: 'Fine Dining Area',
+    type: "image",
+  },
+   {
+    id: 8,
+    src: '/rooms/gallery/image6.jpeg',
+    title: 'Fine Dining Area',
+    type: "image",
+  },
+   {
+    id: 9,
+    src: '/rooms/deluxe-room4.mp4',
+    title: 'Fine Dining Area',
+    type: "video",
   },
 ];

@@ -1,29 +1,33 @@
 export const rooms = [
   {
-    id: 'standard-room',
-    name: 'Standard Room',
-    price: '₹4,999/night',
-    image: '/rooms/deluxe-room.jpeg',
+    id: "standard-room",
+    name: "Standard Room",
+    price: "₹4,999/night",
+    image: "/rooms/deluxe-room.jpeg",
 
-    images: [
-      '/rooms/deluxe-room.jpeg',
-      '/rooms/deluxe-room.jpeg',
-      '/rooms/deluxe-room.jpeg',
+    // images: [
+    //   '/rooms/deluxe-room.jpeg',
+    //   '/rooms/deluxe-room.jpeg',
+    //   '/rooms/deluxe-room.jpeg',
+    // ],
+
+    media: [
+      { type: "image", src: "/rooms/deluxe-room.jpeg" },
+      // { type: "video", src: "/rooms/room-video.mp4" },
+      { type: "image", src: "/rooms/deluxe-room2.jpeg" },
     ],
 
     meta_description:
-      'A comfortable Standard Room with modern interiors, king-size bed, AC, and free WiFi.',
+      "A comfortable Standard Room with modern interiors, king-size bed, AC, and free WiFi.",
 
-    amenities: ['25 Sq. meter', 'Free WiFi', 'Balcony'],
+    amenities: ["25 Sq. meter", "Free WiFi", "Balcony"],
 
     description: (
       <>
         <p>
-          <strong>
-            Architecturally impressive and elegant Deco rooms
-          </strong>{' '}
-          are well appointed, combining fine art deco artistry with an eye
-          towards refinement and comfort.
+          <strong>Architecturally impressive and elegant Deco rooms</strong> are
+          well appointed, combining fine art deco artistry with an eye towards
+          refinement and comfort.
         </p>
 
         <p className="mt-4">
@@ -33,7 +37,7 @@ export const rooms = [
         </p>
 
         <p className="mt-4">
-          Guests can enjoy <span className="font-semibold">25 sq. meter</span>{' '}
+          Guests can enjoy <span className="font-semibold">25 sq. meter</span>{" "}
           of space with a marble bathroom, luxurious amenities, and a pristine
           view of <i>The Atrium</i>.
         </p>
@@ -42,29 +46,28 @@ export const rooms = [
   },
 
   {
-    id: 'deluxe-room',
-    name: 'Deluxe Room',
-    price: '₹5,999/night',
-    image:
-      'https://images.unsplash.com/photo-1505692952047-1a78307da8f2?q=80&w=1200&auto=format&fit=crop',
+    id: "deluxe-room",
+    name: "Deluxe Room",
+    price: "₹5,999/night",
+    image: "/rooms/deluxe-room2.jpeg",
 
-    images: [
-      'https://images.unsplash.com/photo-1505692952047-1a78307da8f2',
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2',
-      'https://images.unsplash.com/photo-1611892440504-42a792e24d32',
+    // images: [
+    //   '/rooms/deluxe-room2.jpeg',
+    //   '/rooms/deluxe-room1.jpeg',
+    //   '/rooms/deluxe-room3.jpeg',
+    // ],
+
+    media: [
+      { type: "image", src: "/rooms/deluxe-room2.jpeg" },
+      { type: "image", src: "/rooms/deluxe-room3.jpeg" },
+      { type: "image", src: "/rooms/deluxe-room1.jpeg" },
+      { type: "video", src: "/rooms/deluxe-room4.mp4" },
     ],
 
     meta_description:
-      'Spacious deluxe room with luxury interiors, balcony view, and premium facilities.',
+      "Spacious deluxe room with luxury interiors, balcony view, and premium facilities.",
 
-    amenities: [
-      'AC',
-      'WiFi',
-      'Balcony',
-      '45.1 Sq. meter',
-      'TV',
-      '1 King Bed',
-    ],
+    amenities: ["AC", "WiFi", "Balcony", "45.1 Sq. meter", "TV", "1 King Bed"],
 
     description: (
       <>
@@ -75,10 +78,9 @@ export const rooms = [
         </p>
 
         <p className="mt-4">
-          Guests can enjoy{' '}
-          <span className="font-semibold">45.1 sq. meter</span> of beautifully
-          designed space with a marble bathroom, luxurious amenities, and a
-          pristine view of <i>The Atrium</i>.
+          Guests can enjoy <span className="font-semibold">45.1 sq. meter</span>{" "}
+          of beautifully designed space with a marble bathroom, luxurious
+          amenities, and a pristine view of <i>The Atrium</i>.
         </p>
 
         <p className="mt-4">
