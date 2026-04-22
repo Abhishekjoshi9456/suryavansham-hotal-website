@@ -20,7 +20,9 @@ export const metadata: Metadata = {
     google: "552MR2mOUQgB5VfWrIP2wUOdhl1L9bLX8wdn2X4k2lM",
   },
   icons: {
-    icon: "/logo-new.png",
+    icon: [
+      { url: "/logo-favicon.ico"},
+    ],
   },
 };
 
