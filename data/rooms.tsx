@@ -2,7 +2,7 @@ export const rooms = [
   {
     id: "standard-room",
     name: "Standard Room",
-    price: "₹4,999/night",
+    price: "₹3,000/night",
     image: "/rooms/standard-room1.jpeg",
 
     // images: [
@@ -49,7 +49,7 @@ export const rooms = [
   {
     id: "deluxe-room",
     name: "Deluxe Room",
-    price: "₹5,999/night",
+    price: "₹4,000/night",
     image: "/rooms/deluxe-room2.jpeg",
 
     // images: [
