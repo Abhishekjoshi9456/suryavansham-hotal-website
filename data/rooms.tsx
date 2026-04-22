@@ -1,4 +1,20 @@
-export const rooms = [
+type MediaItem = {
+  type: "image" | "video";
+  src: string;
+};
+
+type Room = {
+  id: string;
+  name: string;
+  price: string;
+  media: MediaItem[];
+  meta_description: string;
+  amenities: string[];
+  description: React.ReactNode;
+  image?: string; // optional (agar use ho raha hai)
+};
+
+export const rooms: Room[] = [
   {
     id: "standard-room",
     name: "Standard Room",
